@@ -24,6 +24,11 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
+    <dependency>
+        <groupId>com.orange</groupId>
+        <artifactId>hello-service-api</artifactId>
+        <version>${version}</version>
+    </dependency>
 </dependencies>
 
 </project>

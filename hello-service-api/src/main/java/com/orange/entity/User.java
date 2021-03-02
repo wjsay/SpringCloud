@@ -2,7 +2,7 @@ package com.orange.entity;
 
 /**
  * @author yu
- * @date 2021/3/2 1:22 下午
+ * @date 2021/3/2 10:54 下午
  **/
 public class User {
     String name;
@@ -26,9 +26,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "name = " + name + ", age = " + age;
     }
 }
