@@ -1,5 +1,6 @@
 package com.orange.controller;
 
+import com.orange.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,14 +12,12 @@ import org.springframework.web.client.RestTemplate;
  **/
 @RestController
 public class ConsumerController {
-    /**
-     * 来自ConsumerApplication中实例化的bean
-     */
-    private RestTemplate restTemplate;
+
+    private HelloService helloService;
 
     @Autowired
-    public void setRestTemplate(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public void setHelloService(HelloService helloService) {
+        this.helloService = helloService;
     }
 
     /**
@@ -27,6 +26,6 @@ public class ConsumerController {
      */
     @GetMapping("/ribbon-consumer")
     public String helloConsumer() {
-        return restTemplate.getForEntity("http://hello-service/hello", String.class).getBody();
+        return helloService.helloService();
     }
 }
