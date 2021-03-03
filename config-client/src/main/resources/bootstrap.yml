@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: wjsay
+  cloud:
+    config:
+      uri: http://localhost:7001/
+      label: master
+      profile: dev
+      fail-fast: true
+server:
+  port: 7002
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
