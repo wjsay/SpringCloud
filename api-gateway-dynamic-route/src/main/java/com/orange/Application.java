@@ -15,10 +15,4 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-//    @Bean
-//    @RefreshScope
-//    @ConfigurationProperties("zuul")
-//    public ZuulProperties zuulProperties() {
-//        return new ZuulProperties();
-//    }
 }
