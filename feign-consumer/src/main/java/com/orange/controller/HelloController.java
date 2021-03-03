@@ -1,10 +1,8 @@
 package com.orange.controller;
 
 import com.orange.entity.User;
-import com.orange.service.HelloService;
 import com.orange.service.RefactorHelloService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
