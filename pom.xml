@@ -27,6 +27,7 @@
         <module>api-gateway-dynamic-route</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>api-gateway-dynamic-filter</module>
     </modules>
 
     <properties>
@@ -35,6 +36,7 @@
         <spring.boot-version>2.3.1.RELEASE</spring.boot-version>
         <spring.cloud-version>Hoxton.SR5</spring.cloud-version>
         <version>1.0-SNAPSHOT</version>
+        <groovy-version>3.0.4</groovy-version>
     </properties>
 
     <dependencyManagement>
