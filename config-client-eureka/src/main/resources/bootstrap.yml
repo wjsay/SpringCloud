@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: wjsay
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:7001
+      fail-fast: true
+      enabled: true
+      discovery:
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 7004

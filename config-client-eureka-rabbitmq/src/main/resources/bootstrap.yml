@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-client
+  rabbitmq:
+    host: rabbitmq1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:7001
+      fail-fast: true
+      name: wjsay
+      profile: dev
+      discovery:
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka/
+server:
+  port: 7004

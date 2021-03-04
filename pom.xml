@@ -28,6 +28,12 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>api-gateway-dynamic-filter</module>
+        <module>rabbitmq-hello</module>
+        <module>config-client-eureka</module>
+        <module>config-server-eureka</module>
+        <module>config-server-eureka-rabbitmq</module>
+        <module>config-client-eureka-rabbitmq</module>
+        <module>config-server-eureka-kafka</module>
     </modules>
 
     <properties>
