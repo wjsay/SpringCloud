@@ -34,6 +34,7 @@
         <module>config-server-eureka-rabbitmq</module>
         <module>config-client-eureka-rabbitmq</module>
         <module>config-server-eureka-kafka</module>
+        <module>config-client-eureka-kafka</module>
     </modules>
 
     <properties>

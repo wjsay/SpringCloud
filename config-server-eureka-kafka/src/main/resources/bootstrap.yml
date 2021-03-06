@@ -13,7 +13,7 @@ spring:
       kafka:
         binder:
           zk-nodes: zookeeper1:2181
-          brokers: kafka1:9029
+          brokers: kafka1:9092
 server:
   port: 7001
 eureka:
